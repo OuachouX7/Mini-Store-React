@@ -1,0 +1,74 @@
+
+
+.Container{
+                /* Left Sidebar */
+
+    width: 10vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+}
+.Logo-container{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Logo{
+    width: 46px;
+    height: 45px;
+    background: #965E47;
+    border-radius: 56px;
+}
+.menu-up{
+    height: calc(100%-10%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-down{
+    height: calc(100%-90%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   margin-top: 10px;
+}
+.active{
+    /* Frame 2 */
+
+
+    padding: 6px 19px;
+    gap: 4px;
+
+
+    /* Primary color */
+    background: #965E47;
+    border-radius: 16px;
+
+    /* Inside auto layout */
+
+
+}
+.icon > svg{
+    width: 24px;
+    height: 24px;
+}
