@@ -1,7 +1,7 @@
 .hero-container{
     background-color: #F8F8F8;
 
-    width: 70vw;
+    width: 65%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,7 +9,6 @@
 
 
 }
-
 .cat{
     gap: 10px;
     height: 50px;
@@ -75,6 +74,7 @@ h1{
     justify-content: space-around;
     align-items: center;
     width: 90%;
+    margin: 10px 0;
   
 
     border-radius: 20px;
@@ -128,7 +128,7 @@ h1{
 
 
     
-    height: 70%;
+    height: 73%;
 
     border-radius: 20px;
 
@@ -239,6 +239,7 @@ h2,h1{
     padding: 10px 16px;
     gap: 10px;
     width: 100%;
+    margin-bottom: 10px;
 
 
     /* Primary color */
@@ -247,8 +248,9 @@ h2,h1{
     border: none;
     color: white;
 }
-h3{
-    margin: 10px 0;
+.coulors > h3,
+.taille > h3{
+    margin: 5px 0;
 }
 .liste{
     height: 100%;
@@ -259,7 +261,7 @@ h3{
 .second-card{
     background-color: #FFFFFF;
     border-radius: 20px;
-    height: 25%;
+    height: 26%;
     
     display: flex;
     flex-direction: column;
@@ -268,7 +270,7 @@ h3{
 .last-card{
     background-color: #FFFFFF;
     border-radius: 20px;
-    height: 38%;
+    height: 39%;
     
     display: flex;
     flex-direction: column;

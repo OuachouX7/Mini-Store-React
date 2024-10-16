@@ -3,7 +3,7 @@
 .Container{
                 /* Left Sidebar */
 
-    width: 10vw;
+    width: 10%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -11,6 +11,9 @@
     align-items: center;
     justify-content: space-between;
 
+}
+.icon > p{
+    margin: 0;
 }
 .menu{
     display: flex;
@@ -32,14 +35,14 @@
     border-radius: 56px;
 }
 .menu-up{
-    height: calc(100%-10%);
+    height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 .menu-down{
-    height: calc(100%-90%);
+    height: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
