@@ -1,39 +1,75 @@
 import { useState } from 'react'
 import { useEffect } from 'react'
 import './styles/panier.css'
+import img2 from './images/image.jpg'
 
 const Panier = ({item}) => {
 
         const [itt,setitt] = useState([]);
 
+        const [total,settotal] = useState(0);
+
+        const [qte,setqte] = useState(0);
+
+        const handleQteMinus = () => {
+            setqte(qte => qte - 1);
+        }
+        
+        const handleQtePlus = () => {
+            setqte(qte => qte + 1);
+        }
+
+        const handleDelete = (event) => {
+            
+            const deletedButton = event.target.closest('.remove');
+            
+            const container = deletedButton.closest('.panier1'); 
+            
+            container.remove();
+            
+            settotal(t => t - item.price);
+            
+        };
+        
         useEffect(() => {
             const newItem = (
                 <div className="panier1">
                     <div className="panier1-img">
-                        <img className='image-panier' src={item.src} alt={item.alt} />
+                        <img className='image-panier' src={img2} alt={item.alt} />
                     </div>
                     <div className="title-price-qte">
                         <h3>{item.name}</h3>
                         <div className="qte-price">
                             <div className="qte">
-                                <button className='btn-panier'>-</button>
-                                <span className='span-panier'>1</span>
-                                <button className='btn-panier'>+</button>
+                                <button className='btn-panier' onClick={handleQteMinus}>
+                                    -
+                                </button>
+                                <span className='span-panier'>{qte}</span>
+                                <button className='btn-panier' onClick={handleQtePlus}>
+                                    +
+                                </button>
                             </div>
                             <div className="price">
                                 <span>{item.price}</span>
                             </div>
                         </div>
                     </div>
+                    <button className="remove" onClick={handleDelete}>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M135.2 17.7L128 32 32 32C14.3 32 0 46.3 0 64S14.3 96 32 96l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-96 0-7.2-14.3C307.4 6.8 296.3 0 284.2 0L163.8 0c-12.1 0-23.2 6.8-28.6 17.7zM416 128L32 128 53.2 467c1.6 25.3 22.6 45 47.9 45l245.8 0c25.3 0 46.3-19.7 47.9-45L416 128z"/></svg>
+                    </button>
+                    <hr />
                 </div>
             );
-
-            if (itt.length < 3) {
-                
-                setitt(prevItems => [...prevItems, newItem]);
-            }
+            
+            setitt(prevItems => [...prevItems, newItem]);
+            
+            settotal(t => t + item.price);
+            
+    
 
         }, [item]);
+
+
 
     return(
         <div className="panier-Container" id='pan-cont'>
@@ -43,11 +79,11 @@ const Panier = ({item}) => {
                     <h2 className='h2-panier'>Panier</h2>
                     {itt.map(it => <div> {it}
                         </div>)}
-                    <div className="total">
+                    {<div className="total">
                         <p className='total-p'>Total</p>
-                        <span className='line-through'>1097.00 DH</span>
-                        <span className='the-pricee'>977.00 DH</span>
-                    </div>
+                        <span className='line-through'>{total + 200} DH</span>
+                        <span className='the-pricee'>{total} DH</span>
+                    </div>}
                 </div>
                 <div className="panier-down">
 

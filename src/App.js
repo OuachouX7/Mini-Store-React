@@ -15,7 +15,7 @@ function App() {
   const item1 = {
     id : 1,
     name : 'Pantalon en Jean Léger',
-    price : '359.00 DH',
+    price : 359,
     src : './components/images/image.jpg',
     alt: 'img1'
   }
@@ -23,11 +23,11 @@ function App() {
   const item2 = {
     id : 2,
     name : 'Pantalon en Jean',
-    price : '399.00 DH',
+    price : 399,
     src : './components/images/imagee.jpg',
     alt: 'img2'
   }
-
+  
   if (item1.id === id) {
     var res = item1;
   } else {
