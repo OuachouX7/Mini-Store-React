@@ -1,80 +1,48 @@
+import { useState } from 'react'
+import { useEffect } from 'react'
 import './styles/panier.css'
-import img1 from './images/imagee.jpg'
-import img3 from './images/imageee.jpg'
-import img4 from './images/imageeee.jpg'
 
-const panier = () => {
+const Panier = ({item}) => {
+
+        const [itt,setitt] = useState([]);
+
+        useEffect(() => {
+            const newItem = (
+                <div className="panier1">
+                    <div className="panier1-img">
+                        <img className='image-panier' src={item.src} alt={item.alt} />
+                    </div>
+                    <div className="title-price-qte">
+                        <h3>{item.name}</h3>
+                        <div className="qte-price">
+                            <div className="qte">
+                                <button className='btn-panier'>-</button>
+                                <span className='span-panier'>1</span>
+                                <button className='btn-panier'>+</button>
+                            </div>
+                            <div className="price">
+                                <span>{item.price}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+
+            if (itt.length < 3) {
+                
+                setitt(prevItems => [...prevItems, newItem]);
+            }
+
+        }, [item]);
 
     return(
         <div className="panier-Container" id='pan-cont'>
             <div className="paniers">
 
                 <div className="panier-up">
-                <h2 className='h2-panier'>Panier</h2>
-
-                    <div className="panier1">
-                        <div className="panier1-img">
-                            <img className='image-panier' src={img1} alt="" />
-                        </div>
-                        <div className="title-price-qte">
-                            <h3>Pantalon en Jean Léger</h3>
-                            <div className="qte-price">
-                                <div className="qte">
-
-                                    <button className='btn-panier'>-</button>
-                                    <span className='span-panier'>1</span>
-                                    <button className='btn-panier'>+</button>
-                                </div>
-                                <div className="price">
-                                    <span>359.00 DH</span>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-                    <div className="panier1">
-                        <div className="panier1-img">
-                            <img className='image-panier' src={img4} alt="" />
-                        </div>
-                        <div className="title-price-qte">
-                            <h3>Pantalon en Jean Léger</h3>
-                            <div className="qte-price">
-                                <div className="qte">
-
-                                    <button className='btn-panier'>-</button>
-                                    <span className='span-panier'>1</span>
-                                    <button className='btn-panier'>+</button>
-                                </div>
-                                <div className="price">
-                                    <span>359.00 DH</span>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-                    <div className="panier1">
-                        <div className="panier1-img">
-                            <img className='image-panier' src={img3} alt="" />
-                        </div>
-                        <div className="title-price-qte">
-                            <h3>Pantalon en Jean Léger</h3>
-                            <div className="qte-price">
-                                <div className="qte">
-
-                                    <button className='btn-panier'>-</button>
-                                    <span className='span-panier'>1</span>
-                                    <button className='btn-panier'>+</button>
-                                </div>
-                                <div className="price">
-                                    <span>359.00 DH</span>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
+                    <h2 className='h2-panier'>Panier</h2>
+                    {itt.map(it => <div> {it}
+                        </div>)}
                     <div className="total">
                         <p className='total-p'>Total</p>
                         <span className='line-through'>1097.00 DH</span>
@@ -117,4 +85,4 @@ const panier = () => {
     )
 }
 
-export default panier
+export default Panier

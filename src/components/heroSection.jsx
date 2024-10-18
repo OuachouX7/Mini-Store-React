@@ -4,7 +4,12 @@ import img1 from './images/imagee.jpg'
 import img3 from './images/imageee.jpg'
 import img4 from './images/imageeee.jpg'
 
-const heroSection = () => {
+const heroSection = ({onSendData}) => {
+
+    const handlePurchase = (id) => {
+        var id = id;
+        onSendData(id);
+    }
 
     return(
         <div className="hero-container">
@@ -49,8 +54,8 @@ const heroSection = () => {
                                         <img className='img1' src={img} alt="" />
                                     </div>
                                     <div className="title-price-1">
-                                        <h3>Pantalon en Jean Léger</h3>
-                                        <p>359.00 DH</p>
+                                        <h3>Pantalon en Jean</h3>
+                                        <p>399.00 DH</p>
                                     </div>
                                 </div>
                                 <div className="taille">
@@ -103,7 +108,7 @@ const heroSection = () => {
                                     </div>
                                 </div>
                                 <div className='btn'>
-                                    <button>
+                                    <button onClick={() => handlePurchase(1)}>
                                         Ajouter Au Panier
                                     </button>
                                 </div>
@@ -115,8 +120,8 @@ const heroSection = () => {
                                         <img className='img1' src={img1} alt="" />
                                     </div>
                                     <div className="title-price-1">
-                                        <h3>Pantalon en Jean Léger</h3>
-                                        <p>359.00 DH</p>
+                                        <h3>Pantalon en Jean</h3>
+                                        <p>399.00 DH</p>
                                     </div>
                                 </div>
                             </div>
@@ -162,7 +167,7 @@ const heroSection = () => {
                                     </div>
                                 </div>
                                 <div className='btn'>
-                                    <button>
+                                    <button onClick={() => handlePurchase(2)}>
                                         Ajouter Au Panier
                                     </button>
                                 </div>
