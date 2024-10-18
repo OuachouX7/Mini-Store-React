@@ -6,7 +6,7 @@ import img4 from './images/imageeee.jpg'
 
 const heroSection = () => {
     return(
-        <div className="hero-container">
+        <div className="hero-container" id='hero'>
             <div className="categories-container">
 
                 <div className="Categories">

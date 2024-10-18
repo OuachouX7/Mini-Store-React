@@ -240,14 +240,16 @@ p{
 
 
 }
-
+.h2-panier{
+    text-align: center;
+}
 .reduction{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    margin: 20px 0;
+    margin: 25px 0;
 }
 label{
     text-align: left;
@@ -260,4 +262,7 @@ label{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+button{
+    cursor: pointer;
 }

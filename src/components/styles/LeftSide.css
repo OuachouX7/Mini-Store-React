@@ -1,16 +1,25 @@
 
-
-.Container{
-                /* Left Sidebar */
+.container-all{
+    position: relative;
+}
+.works{
 
     width: 10%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
+}
+.Container{
+                /* Left Sidebar */
+    height: 100%;
+    display: none;
+    z-index: -3;
 
+}
+ul{
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 .icon > p{
     margin: 0;
@@ -66,12 +75,60 @@
     /* Primary color */
     background: #965E47;
     border-radius: 16px;
+    
 
     /* Inside auto layout */
 
 
 }
+.active > a{
+    color: white;
+}
 .icon > svg{
     width: 24px;
     height: 24px;
+}
+.arrow{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.working{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    animation-name: expand;
+    animation-duration: 3s;
+    
+}
+.move-arr{
+    transform: rotate(180deg);
+}
+.arrow > span{
+    font-size: 25px;
+}
+
+
+
+@keyframes expand {
+    0%{
+        width: calc(100%/2);
+    }
+    50%{
+        width: calc(100%/1.5);
+    }
+    100%{
+        width: calc(100%/1);
+    }
 }

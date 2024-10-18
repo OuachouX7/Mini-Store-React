@@ -6,11 +6,11 @@ import img4 from './images/imageeee.jpg'
 const panier = () => {
 
     return(
-        <div className="panier-Container">
+        <div className="panier-Container" id='pan-cont'>
             <div className="paniers">
 
                 <div className="panier-up">
-                <h2>Panier</h2>
+                <h2 className='h2-panier'>Panier</h2>
 
                     <div className="panier1">
                         <div className="panier1-img">
