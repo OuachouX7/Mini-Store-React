@@ -11,14 +11,7 @@ const Panier = ({item}) => {
 
         const [qte,setqte] = useState(0);
 
-        const handleQteMinus = () => {
-            setqte(qte => qte - 1);
-        }
         
-        const handleQtePlus = () => {
-            setqte(qte => qte + 1);
-        }
-
         const handleDelete = (event) => {
             
             const deletedButton = event.target.closest('.remove');
@@ -32,6 +25,13 @@ const Panier = ({item}) => {
         };
         
         useEffect(() => {
+            const handleQteMinus = () => {
+                setqte(qte => qte - 1);
+            }
+            
+            const handleQtePlus = () => {
+                setqte(qte => qte + 1);
+            }
             const newItem = (
                 <div className="panier1">
                     <div className="panier1-img">
@@ -44,7 +44,7 @@ const Panier = ({item}) => {
                                 <button className='btn-panier' onClick={handleQteMinus}>
                                     -
                                 </button>
-                                <span className='span-panier'>{qte}</span>
+                                <div className='span-panier'>{qte}</div>
                                 <button className='btn-panier' onClick={handleQtePlus}>
                                     +
                                 </button>
@@ -81,8 +81,8 @@ const Panier = ({item}) => {
                         </div>)}
                     {<div className="total">
                         <p className='total-p'>Total</p>
-                        <span className='line-through'>{total + 200} DH</span>
-                        <span className='the-pricee'>{total} DH</span>
+                        <span className='line-through'>{total *qte + 200} DH</span>
+                        <span className='the-pricee'>{total * qte} DH</span>
                     </div>}
                 </div>
                 <div className="panier-down">
