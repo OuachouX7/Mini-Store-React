@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './styles/LeftSide.css'
+import './styles/LeftSide.scss'
 
 
 const LeftSide = () => {

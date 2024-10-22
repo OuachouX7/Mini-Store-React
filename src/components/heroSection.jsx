@@ -1,4 +1,4 @@
-import './styles/heroSection.css'
+import './styles/heroSection.scss'
 import img from './images/image.jpg'
 import img1 from './images/imagee.jpg'
 import img3 from './images/imageee.jpg'

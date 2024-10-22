@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useEffect } from 'react'
-import './styles/panier.css'
+import './styles/panier.scss'
 import img2 from './images/image.jpg'
 
 const Panier = ({item}) => {
@@ -10,6 +10,8 @@ const Panier = ({item}) => {
         const [total,settotal] = useState(0);
 
         const [qte,setqte] = useState(0);
+
+        const [qt,setqt] = useState(0);
 
         
         const handleDelete = (event) => {
@@ -32,6 +34,8 @@ const Panier = ({item}) => {
             const handleQtePlus = () => {
                 setqte(qte => qte + 1);
             }
+
+            setqt(qte);
             const newItem = (
                 <div className="panier1">
                     <div className="panier1-img">
@@ -44,7 +48,7 @@ const Panier = ({item}) => {
                                 <button className='btn-panier' onClick={handleQteMinus}>
                                     -
                                 </button>
-                                <div className='span-panier'>{qte}</div>
+                                <div className='span-panier'>{qt}</div>
                                 <button className='btn-panier' onClick={handleQtePlus}>
                                     +
                                 </button>
