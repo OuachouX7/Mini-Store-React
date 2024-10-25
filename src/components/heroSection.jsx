@@ -5,10 +5,12 @@ import img3 from './images/imageee.jpg'
 import img4 from './images/imageeee.jpg'
 
 const heroSection = ({onSendData}) => {
-
     const handlePurchase = (id) => {
-        var id = id;
-        onSendData(id);
+        if(confirm('Are You Sure !!!!!!!!!!!')){
+
+            var id = id;
+            onSendData(id);
+        }
     }
 
     return(
