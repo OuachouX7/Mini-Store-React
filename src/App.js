@@ -16,7 +16,7 @@ function App() {
     id : 1,
     name : 'Pantalon en Jean Léger',
     price : 359,
-    src : './components/images/image.jpg',
+    src : '/images/image.jpg',
     alt: 'img1'
   }
 
@@ -24,7 +24,7 @@ function App() {
     id : 2,
     name : 'Pantalon en Jean',
     price : 399,
-    src : './components/images/imagee.jpg',
+    src : '/images/imagee.jpg',
     alt: 'img2'
   }
   

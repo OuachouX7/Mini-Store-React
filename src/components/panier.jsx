@@ -10,10 +10,8 @@ const Panier = ({item}) => {
         const [total,settotal] = useState(0);
 
         const [qte,setqte] = useState(0);
-
-        const [qt,setqt] = useState(0);
-
         
+
         const handleDelete = (event) => {
             
             const deletedButton = event.target.closest('.remove');
@@ -35,7 +33,6 @@ const Panier = ({item}) => {
                 setqte(qte => qte + 1);
             }
 
-            setqt(qte);
             const newItem = (
                 <div className="panier1">
                     <div className="panier1-img">
@@ -48,7 +45,7 @@ const Panier = ({item}) => {
                                 <button className='btn-panier' onClick={handleQteMinus}>
                                     -
                                 </button>
-                                <div className='span-panier'>{qt}</div>
+                                <div className='span-panier'>{qte}</div>
                                 <button className='btn-panier' onClick={handleQtePlus}>
                                     +
                                 </button>
