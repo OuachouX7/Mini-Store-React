@@ -17,7 +17,8 @@ function App() {
     name : 'Pantalon en Jean Léger',
     price : 359,
     // src : img,
-    alt: 'img1'
+    alt: 'img1',
+    qte: 0
   },
 
  {
@@ -25,70 +26,77 @@ function App() {
     name : 'Pantalon en Jean',
     price : 399,
     // src : img1,
-    alt: 'img2'
+    alt: 'img2',
+    qte: 0
   },{
     id : 5,
     name : 'Chemise Blue',
     price : 359,
     // src : img5,
-    alt: 'img1'
+    alt: 'img1',
+    qte: 0
   },
 
  {
     id : 7,
-    name : 'Chemise Noir',
-    price : 399,
+    name : 'Chemise Blue',
+    price : 359,
     // src : img6,
-    alt: 'img2'
+    alt: 'img2',
+    qte: 0
   },{
     id : 9,
     name : 'Shoes Jordan',
     price : 359,
     // src : img7,
-    alt: 'img1'
+    alt: 'img1',
+    qte: 0
   },
 
  {
     id : 11,
-    name : 'Shoes Nike',
-    price : 399,
+    name : 'Shoes Adidas',
+    price : 359,
     // src : img8,
-    alt: 'img2'
+    alt: 'img2',
+    qte: 0
   },{
     id : 13,
     name : 'Red Polo',
     price : 359,
     // src : img11,
-    alt: 'img1'
+    alt: 'img1',
+    qte: 0
   },
 
  {
     id : 15,
-    name : 'Black Polo',
-    price : 399,
+    name : 'Red Polo',
+    price : 359,
     // src : img12,
-    alt: 'img2'
+    alt: 'img2',
+    qte: 0
   },{
     id : 17,
     name : 'Essentiel Parfum',
     price : 359,
     // src : img13,
-    alt: 'img1'
+    alt: 'img1',
+    qte: 0
   },
 
  {
     id : 19,
-    name : 'Dusita Parfum',
-    price : 399,
+    name : 'Essentiel Parfum',
+    price : 359,
     // src : img14,
-    alt: 'img2'
+    alt: 'img2',
+    qte: 0
   }]
 
   const res = Products.filter(function (Product) {
     return Product.id === id;
   });
-
-  console.log(res[0]);
 
   const respnose = res[0];
 

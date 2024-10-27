@@ -1,17 +1,67 @@
 import { useState } from 'react'
 import { useEffect } from 'react'
 import './styles/panier.scss'
-import img2 from './images/image.jpg'
+import img1 from './images/image.jpg'
+import img2 from './images/imageee.jpg'
+import img3 from './images/chemise1.jpg'
+import img4 from './images/shoes1.jpg'
+import img5 from './images/shoes3.jpg'
+import img6 from './images/polo1.jpg'
+import img7 from './images/parfum3.jpg'
 
 const Panier = ({item}) => {
+        var mySrc = '' ;
+        switch (item.id) {
+            case 1:
+                mySrc = img1;
+                break;
+        
+            case 3:
+                mySrc = img2;
+                break;
+
+            case 5:
+                mySrc = img3;
+                break;
+
+            case 7:
+                mySrc = img3;
+                break;
+            
+            case 9:
+                mySrc = img4;
+                break;
+
+            case 11:
+                mySrc = img5;
+                break;
+
+            case 13:
+                mySrc = img6;
+                break;
+
+            case 15:
+                mySrc = img6;
+                break;
+                
+            case 17:
+                mySrc = img7;
+                break;
+
+            case 19:
+                mySrc = img7;
+                break;
+        
+        }
+
+        console.log(mySrc);
+        
 
         const [itt,setitt] = useState([]);
 
         const [total,settotal] = useState(0);
 
-        const [qte,setqte] = useState(0);
-        
-        
+        const [qte,setqte] = useState(item.qte);
 
         const handleDelete = (event) => {
             
@@ -37,7 +87,7 @@ const Panier = ({item}) => {
             const newItem = (
                 <div className="panier1">
                     <div className="panier1-img">
-                        <img className='image-panier' src={img2} alt={item.alt} />
+                        <img className='image-panier' src={mySrc} alt={item.alt} />
                     </div>
                     <div className="title-price-qte">
                         <h3>{item.name}</h3>
@@ -79,13 +129,16 @@ const Panier = ({item}) => {
 
                 <div className="panier-up">
                     <h2 className='h2-panier'>Panier</h2>
-                    {itt.map(it => <div> {it}
-                        </div>)}
-                    {<div className="total">
-                        <p className='total-p'>Total</p>
-                        <span className='line-through'>{total *qte + 200} DH</span>
-                        <span className='the-pricee'>{total * qte} DH</span>
-                    </div>}
+                    <div className="newProduct">
+
+                        {itt.map(it => <div> {it}
+                            </div>)}
+                    </div>
+                        {<div className="total">
+                            <p className='total-p'>Total</p>
+                            <span className='line-through'>{total *qte + 200} DH</span>
+                            <span className='the-pricee'>{total * qte} DH</span>
+                        </div>}
                 </div>
                 <div className="panier-down">
 
