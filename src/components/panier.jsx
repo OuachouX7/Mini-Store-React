@@ -11,6 +11,7 @@ const Panier = ({item}) => {
 
         const [qte,setqte] = useState(0);
         
+        
 
         const handleDelete = (event) => {
             
@@ -20,7 +21,7 @@ const Panier = ({item}) => {
             
             container.remove();
             
-            settotal(t => t - item.price);
+            settotal(t => t - parseFloat(item.price));
             
         };
         
@@ -32,14 +33,14 @@ const Panier = ({item}) => {
             const handleQtePlus = () => {
                 setqte(qte => qte + 1);
             }
-
+        
             const newItem = (
                 <div className="panier1">
                     <div className="panier1-img">
-                        <img className='image-panier' src={img2} alt={item.alt} />
+                        <img className='image-panier' src={img2} alt={item[0].alt} />
                     </div>
                     <div className="title-price-qte">
-                        <h3>{item.name}</h3>
+                        <h3>{item[0].name}</h3>
                         <div className="qte-price">
                             <div className="qte">
                                 <button className='btn-panier' onClick={handleQteMinus}>
@@ -51,7 +52,7 @@ const Panier = ({item}) => {
                                 </button>
                             </div>
                             <div className="price">
-                                <span>{item.price}</span>
+                                <span>{item[0].price}</span>
                             </div>
                         </div>
                     </div>
@@ -64,7 +65,7 @@ const Panier = ({item}) => {
             
             setitt(prevItems => [...prevItems, newItem]);
             
-            settotal(t => t + item.price);
+            settotal(t => t + parseFloat(item.price));
             
     
 

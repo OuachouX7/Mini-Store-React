@@ -169,7 +169,7 @@ const HeroSection = ({ onSendData }) => {
                   </div>
                 </div>
                 <div className="btn">
-                  <button onClick={() => handlePurchase(2)}>
+                  <button onClick={() => handlePurchase(3)}>
                     Ajouter Au Panier
                   </button>
                 </div>
@@ -219,7 +219,7 @@ const HeroSection = ({ onSendData }) => {
     const myChemise = [
 
         {
-           id : 1,
+           id : 5,
            name : 'Chemise Blue',
            price : 359,
            src : img5,
@@ -227,7 +227,7 @@ const HeroSection = ({ onSendData }) => {
          },
        
         {
-           id : 2,
+           id : 6,
            name : 'Chemise Noir',
            price : 399,
            src : img6,
@@ -235,14 +235,14 @@ const HeroSection = ({ onSendData }) => {
          },
    
         {
-           id : 3,
+           id : 7,
            name : 'Chemise Blue',
            price : 359,
            src : img5,
            alt: 'img3'
          },
          {
-           id : 4,
+           id : 8,
            name : 'Chemise Noir',
            price : 399,
            src : img6,
@@ -314,7 +314,7 @@ const HeroSection = ({ onSendData }) => {
                   </div>
                 </div>
                 <div className="btn">
-                  <button onClick={() => handlePurchase(1)}>
+                  <button onClick={() => handlePurchase(5)}>
                     Ajouter Au Panier
                   </button>
                 </div>
@@ -368,7 +368,7 @@ const HeroSection = ({ onSendData }) => {
                   </div>
                 </div>
                 <div className="btn">
-                  <button onClick={() => handlePurchase(2)}>
+                  <button onClick={() => handlePurchase(7)}>
                     Ajouter Au Panier
                   </button>
                 </div>
@@ -418,7 +418,7 @@ const HeroSection = ({ onSendData }) => {
     const myShoes = [
 
         {
-           id : 1,
+           id : 9,
            name : 'Shoes Jordan',
            price : 359,
            src : img7,
@@ -426,7 +426,7 @@ const HeroSection = ({ onSendData }) => {
          },
        
         {
-           id : 2,
+           id : 10,
            name : 'Shoes Nike',
            price : 399,
            src : img8,
@@ -434,14 +434,14 @@ const HeroSection = ({ onSendData }) => {
          },
    
         {
-           id : 3,
+           id : 11,
            name : 'Shoes Adidas',
            price : 359,
            src : img9,
            alt: 'img3'
          },
          {
-           id : 4,
+           id : 12,
            name : 'Shoes Puma',
            price : 399,
            src : img10,
@@ -513,7 +513,7 @@ const HeroSection = ({ onSendData }) => {
                   </div>
                 </div>
                 <div className="btn">
-                  <button onClick={() => handlePurchase(1)}>
+                  <button onClick={() => handlePurchase(9)}>
                     Ajouter Au Panier
                   </button>
                 </div>
@@ -567,7 +567,7 @@ const HeroSection = ({ onSendData }) => {
                   </div>
                 </div>
                 <div className="btn">
-                  <button onClick={() => handlePurchase(2)}>
+                  <button onClick={() => handlePurchase(11)}>
                     Ajouter Au Panier
                   </button>
                 </div>
@@ -617,7 +617,7 @@ const HeroSection = ({ onSendData }) => {
     const myPolo = [
 
         {
-           id : 1,
+           id : 13,
            name : 'Red Polo',
            price : 359,
            src : img11,
@@ -625,7 +625,7 @@ const HeroSection = ({ onSendData }) => {
          },
        
         {
-           id : 2,
+           id : 14,
            name : 'Black Polo',
            price : 399,
            src : img12,
@@ -633,14 +633,14 @@ const HeroSection = ({ onSendData }) => {
          },
    
         {
-           id : 3,
+           id : 15,
            name : 'Red Polo',
            price : 359,
            src : img11,
            alt: 'img3'
          },
          {
-           id : 4,
+           id : 16,
            name : 'Black Polo',
            price : 399,
            src : img12,
@@ -712,7 +712,7 @@ const HeroSection = ({ onSendData }) => {
                   </div>
                 </div>
                 <div className="btn">
-                  <button onClick={() => handlePurchase(1)}>
+                  <button onClick={() => handlePurchase(13)}>
                     Ajouter Au Panier
                   </button>
                 </div>
@@ -766,7 +766,7 @@ const HeroSection = ({ onSendData }) => {
                   </div>
                 </div>
                 <div className="btn">
-                  <button onClick={() => handlePurchase(2)}>
+                  <button onClick={() => handlePurchase(15)}>
                     Ajouter Au Panier
                   </button>
                 </div>
@@ -816,7 +816,7 @@ const HeroSection = ({ onSendData }) => {
     const myParfum = [
 
         {
-           id : 1,
+           id : 17,
            name : 'Essentiel Parfum',
            price : 359,
            src : img13,
@@ -824,7 +824,7 @@ const HeroSection = ({ onSendData }) => {
          },
        
         {
-           id : 2,
+           id : 18,
            name : 'Dusita Parfum',
            price : 399,
            src : img14,
@@ -832,14 +832,14 @@ const HeroSection = ({ onSendData }) => {
          },
    
         {
-           id : 3,
+           id : 19,
            name : 'Essentiel Parfum',
            price : 359,
            src : img13,
            alt: 'img3'
          },
          {
-           id : 4,
+           id : 20,
            name : 'Dusita Parfum',
            price : 399,
            src : img14,
@@ -911,7 +911,7 @@ const HeroSection = ({ onSendData }) => {
                   </div>
                 </div>
                 <div className="btn">
-                  <button onClick={() => handlePurchase(1)}>
+                  <button onClick={() => handlePurchase(17)}>
                     Ajouter Au Panier
                   </button>
                 </div>
@@ -965,7 +965,7 @@ const HeroSection = ({ onSendData }) => {
                   </div>
                 </div>
                 <div className="btn">
-                  <button onClick={() => handlePurchase(2)}>
+                  <button onClick={() => handlePurchase(19)}>
                     Ajouter Au Panier
                   </button>
                 </div>
