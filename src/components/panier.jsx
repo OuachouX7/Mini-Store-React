@@ -146,13 +146,13 @@ const Panier = ({item}) => {
                         <form>
                             <div className="reduction">
 
-                                <input type="text" className='inpt' value='1000.00' id='inpt'/>
                                 <label htmlFor="inpt">Especes</label>
+                                <input type="text" className='inpt' value='1000.00' id='inpt'/>
                             </div>
                             <div className="reduction">
 
-                                <input type="text" className='inpt' value='100.00' id='inpt'/>
                                 <label htmlFor="inpt">Reduction</label>
+                                <input type="text" className='inpt' value='100.00' id='inpt'/>
                             </div>
                         </form>
 

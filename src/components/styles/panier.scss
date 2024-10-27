@@ -265,10 +265,7 @@ p{
 
     border: none;
     border-radius: 12px;
-    border-left: 1px solid var(--black);
-    border-bottom: 1px solid var(--black);
-    border-right: 1px solid var(--black);
-    border-top: none;
+    border: 1px solid var(--black);
     z-index: -3;
 
 
@@ -281,16 +278,9 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
     margin: 25px 0;
 }
-label{
-    text-align: left;
-    position: absolute;
-    top: -12.5px;
-    right: 50%;
-    z-index: 3;
-}
+
 .inputs{
     display: flex;
     flex-direction: column;
