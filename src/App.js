@@ -84,17 +84,19 @@ function App() {
     alt: 'img2'
   }]
 
-  const res = Products.filter(function (Product){
-     return Product.id === id;
-  })
+  const res = Products.filter(function (Product) {
+    return Product.id === id;
+  });
 
+  console.log(res[0]);
 
+  const respnose = res[0];
 
   return (
     <div className="the-app">
       <LeftSide />
-      <HeroSection onSendData = {handleData}/>
-      <Panier item = {[...res]}/>
+      <HeroSection onSendData={handleData} />
+      {respnose && <Panier item={respnose} />}
     </div>
   );
 }
