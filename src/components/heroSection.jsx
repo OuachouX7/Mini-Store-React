@@ -1011,27 +1011,49 @@ const HeroSection = ({ onSendData }) => {
     );
   };
 
+  const animationn = () => {
+    return(
+    
+      <div className="animation2">
+        <div className="first2"></div>
+        <div className="second2"></div>
+        <div className="third2"></div>
+        <div className="last2"></div>
+      </div>
+    )
+  }
+
+  
+
   const handlePurchase = (id) => {
     onSendData(id);
   };
-  const [res, setres] = useState();
+  const [res, setres] = useState(animationn);
   const [idd,setidd] = useState();
 
   const handleActif = (id) => {
-    setidd(id);
-    if (idd === 3 || idd===1) {
-      setres(Pantalons);
-    }else if(id === 2){
-        setres(Chemises);
-    }else if(id === 4){
-      setres(Shoes);
-    }else if(id === 5){
-      setres(Polo);
-    }else if(id === 6){
-      setres(Parfum);
-    }else{
-      setres('Coming Soon !!!!!!')
-    }
+    
+    setTimeout(()=>{
+      setres(animationn)
+    },1000)
+    setTimeout(() => {
+      
+      setidd(id);
+      if (idd === 3 || idd===1) {
+        setres(Pantalons);
+      }else if(id === 2){
+          setres(Chemises);
+      }else if(id === 4){
+        setres(Shoes);
+      }else if(id === 5){
+        setres(Polo);
+      }else if(id === 6){
+        setres(Parfum);
+      }else{
+        setres(animationn);
+      }
+    }, 3000);
+    
   };
   return (
     <div className="hero-container">
