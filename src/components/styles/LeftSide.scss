@@ -1,8 +1,8 @@
-:root{
-    --brown : #965E47;
-    --white : #FFFFFF;
-    --black : #000000;
-}
+
+    $brown : #965E47;
+    $white : #FFFFFF;
+    $black : #000000;
+
 .container-all{
     position: relative;
 }
@@ -23,7 +23,7 @@ ul{
 }
 a{
     text-decoration: none;
-    color: var(--black);
+    color: ($black);
 }
 .icon > p{
     margin: 0;
@@ -63,30 +63,24 @@ a{
 }
 .icon{
     display: flex;
+    cursor: pointer !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   margin-top: 10px;
+    margin-top: 10px;
+    min-width: 60px;
+    width: 65px;
+    background-color: transparent;
+    border: none;
 }
 .active{
-    /* Frame 2 */
-
-
     padding: 6px 19px;
     gap: 4px;
-
-
-    /* Primary color */
-    background: var(--brown);
+    background: var($brown);
     border-radius: 16px;
-    
-
-    /* Inside auto layout */
-
-
 }
 .active > a{
-    color: var(--white);
+    color: var($white);
 }
 .icon > svg{
     width: 24px;
@@ -98,7 +92,7 @@ a{
     position: absolute;
     top: 50%;
     left: 85%;
-    border: 1px solid var(--black);
+    border: 1px solid var($black);
     border-radius: 50%;
     padding: 20px;
     display: flex;

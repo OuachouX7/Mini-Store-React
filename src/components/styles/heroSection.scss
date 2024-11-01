@@ -1,13 +1,13 @@
-:root {
-  --brown: #965e47;
-  --white: #ffffff;
-  --semiWhite: #f8f8f8;
-  --black: #000000;
-  --shadow: rgba(0, 0, 0, 0.02);
-}
+
+  $brown: #965e47;
+  $white: #ffffff;
+  $semiWhite: #f8f8f8;
+  $black: #000000;
+  $shadow: rgba(0, 0, 0, 0.02);
+
 
 .hero-container {
-  background-color: var(--semiWhite);
+  background-color: $semiWhite;
   width: 75%;
   display: flex;
   flex-direction: column;
@@ -29,16 +29,16 @@
     justify-content: center;
     align-items: center;
     background: #ffffff;
-    box-shadow: 0px 10px 20px var(--shadow);
+    box-shadow: 0px 10px 20px $shadow;
     border-radius: 40px;
     padding: 0 40px;
-    border: 1px solid var(--black);
+    border: 1px solid ($black);
     p {
       font-style: normal;
       font-weight: 700;
       font-size: 18px;
       line-height: 22px;
-      color: var(--black);
+      color: ($black);
     }
   }
 }
@@ -65,10 +65,9 @@ h1 {
   width: 48%;
 }
 .act {
-  border: 7px solid var(--black);
+  border: 7px solid ($black);
 }
 .img-t-p-1 {
-  /* Auto layout */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -78,7 +77,6 @@ h1 {
   border-radius: 20px;
 }
 .img1 {
-  /* image */
 
   width: 110px;
   height: 100px;
@@ -95,7 +93,7 @@ h1 {
   font-size: 20px;
   line-height: 130%;
 
-  color: var(--black);
+  color: ($black);
 }
 .tl,
 .clr {
@@ -107,41 +105,34 @@ h1 {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  /* identical to box height */
-
-  color: var(--black);
+  color: ($black);
 }
 .first-card {
-  background-color: var(--white);
+  background-color: ($white);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  /* Frame 15 */
 
   height: 73%;
 
   border-radius: 20px;
 }
 .third-card {
-  background-color: var(--white);
+  background-color: ($white);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  /* Frame 15 */
 
   height: 60%;
 
   border-radius: 20px;
 }
 .M-selected {
-  border: 3px solid var(--black);
+  border: 3px solid ($black);
 }
 .tl {
-  /* Size */
-
-  /* Auto layout */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -152,7 +143,7 @@ h1 {
   min-width: 40px;
   height: 30px;
 
-  background: var(--semiWhite);
+  background: ($semiWhite);
   border-radius: 60px;
 }
 .tl-container {
@@ -172,13 +163,13 @@ h1 {
   border-radius: 50%;
 }
 .black {
-  background-color: var(--black);
+  background-color: ($black);
 }
 .white {
-  background-color: var(--white);
+  background-color: ($white);
 }
 .brown {
-  background-color: var(--brown);
+  background-color: ($brown);
 }
 .blue {
   background-color: blue;
@@ -187,18 +178,12 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
-  /* Frame 17 */
-
   padding: 0px 10px;
   gap: 10px;
-
   max-width: 100px;
   height: 30px;
-
-  background: var(--semiWhite);
+  background: ($semiWhite);
   border-radius: 40px;
-
   margin: 5px 0;
 }
 .clr > p {
@@ -215,7 +200,6 @@ h1 {
   flex-direction: column;
 }
 .btn {
-  /* Frame 22 */
   width: 90%;
 }
 .btn > button {
@@ -223,9 +207,7 @@ h1 {
   gap: 10px;
   width: 100%;
   margin-bottom: 10px;
-
-  /* Primary color */
-  background: var(--brown);
+  background: ($brown);
   border-radius: 12px;
   border: none;
   color: white;
@@ -241,7 +223,7 @@ h1 {
   justify-content: space-between;
 }
 .second-card {
-  background-color: var(--white);
+  background-color: ($white);
   border-radius: 20px;
   height: 26%;
 
@@ -250,7 +232,7 @@ h1 {
   align-items: center;
 }
 .last-card {
-  background-color: var(--white);
+  background-color: ($white);
   border-radius: 20px;
   height: 39%;
 
@@ -260,8 +242,8 @@ h1 {
 }
 
 .animation2{
-  width: 100%;
-    height: 400px;
+    width: 100%;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
