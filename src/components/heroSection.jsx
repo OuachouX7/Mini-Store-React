@@ -18,38 +18,37 @@ import { useState } from "react";
 const HeroSection = ({ onSendData }) => {
   const Pantalons = () => {
     const myPantalons = [
+      {
+        id: 1,
+        name: "Pantalon en Jean Léger",
+        price: 359,
+        src: img,
+        alt: "img1",
+      },
 
-        {
-           id : 1,
-           name : 'Pantalon en Jean Léger',
-           price : 359,
-           src : img,
-           alt: 'img1'
-         },
-       
-        {
-           id : 2,
-           name : 'Pantalon en Jean',
-           price : 399,
-           src : img1,
-           alt: 'img2'
-         },
-   
-        {
-           id : 3,
-           name : 'Pantalon en Jean Léger',
-           price : 359,
-           src : img3,
-           alt: 'img3'
-         },
-         {
-           id : 4,
-           name : 'Pantalon en Jean Léger',
-           price : 359,
-           src : img4,
-           alt: 'img4'
-         }
-    ]
+      {
+        id: 2,
+        name: "Pantalon en Jean",
+        price: 399,
+        src: img1,
+        alt: "img2",
+      },
+
+      {
+        id: 3,
+        name: "Pantalon en Jean Léger",
+        price: 359,
+        src: img3,
+        alt: "img3",
+      },
+      {
+        id: 4,
+        name: "Pantalon en Jean Léger",
+        price: 359,
+        src: img4,
+        alt: "img4",
+      },
+    ];
     return (
       <>
         <h2 id="titul">Liste des Pantalons</h2>
@@ -59,7 +58,11 @@ const HeroSection = ({ onSendData }) => {
               <div className="first-card">
                 <div className="img-t-p-1">
                   <div className="img">
-                    <img className="img1" src={myPantalons[0].src} alt={myPantalons[0].alt} />
+                    <img
+                      className="img1"
+                      src={myPantalons[0].src}
+                      alt={myPantalons[0].alt}
+                    />
                   </div>
                   <div className="title-price-1">
                     <h3>{myPantalons[0].name}</h3>
@@ -123,7 +126,11 @@ const HeroSection = ({ onSendData }) => {
               <div className="second-card">
                 <div className="img-t-p-1">
                   <div className="img">
-                    <img className="img1" src={myPantalons[1].src} alt={myPantalons[1].alt} />
+                    <img
+                      className="img1"
+                      src={myPantalons[1].src}
+                      alt={myPantalons[1].alt}
+                    />
                   </div>
                   <div className="title-price-1">
                     <h3>{myPantalons[1].name}</h3>
@@ -136,7 +143,11 @@ const HeroSection = ({ onSendData }) => {
               <div className="third-card">
                 <div className="img-t-p-1">
                   <div className="img">
-                    <img className="img1" src={myPantalons[2].src} alt={myPantalons[2].alt} />
+                    <img
+                      className="img1"
+                      src={myPantalons[2].src}
+                      alt={myPantalons[2].alt}
+                    />
                   </div>
                   <div className="title-price-1">
                     <h3>{myPantalons[2].name}</h3>
@@ -177,7 +188,11 @@ const HeroSection = ({ onSendData }) => {
               <div className="last-card">
                 <div className="img-t-p-1">
                   <div className="img">
-                    <img className="img1" src={myPantalons[3].src} alt={myPantalons[3].alt} />
+                    <img
+                      className="img1"
+                      src={myPantalons[3].src}
+                      alt={myPantalons[3].alt}
+                    />
                   </div>
                   <div className="title-price-1">
                     <h3>{myPantalons[3].name}</h3>
@@ -217,38 +232,37 @@ const HeroSection = ({ onSendData }) => {
 
   const Chemises = () => {
     const myChemise = [
+      {
+        id: 5,
+        name: "Chemise Blue",
+        price: 359,
+        src: img5,
+        alt: "img1",
+      },
 
-        {
-           id : 5,
-           name : 'Chemise Blue',
-           price : 359,
-           src : img5,
-           alt: 'img1'
-         },
-       
-        {
-           id : 6,
-           name : 'Chemise Noir',
-           price : 399,
-           src : img6,
-           alt: 'img2'
-         },
-   
-        {
-           id : 7,
-           name : 'Chemise Blue',
-           price : 359,
-           src : img5,
-           alt: 'img3'
-         },
-         {
-           id : 8,
-           name : 'Chemise Noir',
-           price : 399,
-           src : img6,
-           alt: 'img4'
-         }
-    ]
+      {
+        id: 6,
+        name: "Chemise Noir",
+        price: 399,
+        src: img6,
+        alt: "img2",
+      },
+
+      {
+        id: 7,
+        name: "Chemise Blue",
+        price: 359,
+        src: img5,
+        alt: "img3",
+      },
+      {
+        id: 8,
+        name: "Chemise Noir",
+        price: 399,
+        src: img6,
+        alt: "img4",
+      },
+    ];
     return (
       <>
         <h2 id="titul">Liste des Pantalons</h2>
@@ -258,7 +272,11 @@ const HeroSection = ({ onSendData }) => {
               <div className="first-card">
                 <div className="img-t-p-1">
                   <div className="img">
-                    <img className="img1" src={myChemise[0].src} alt={myChemise[0].alt} />
+                    <img
+                      className="img1"
+                      src={myChemise[0].src}
+                      alt={myChemise[0].alt}
+                    />
                   </div>
                   <div className="title-price-1">
                     <h3>{myChemise[0].name}</h3>
@@ -322,7 +340,11 @@ const HeroSection = ({ onSendData }) => {
               <div className="second-card">
                 <div className="img-t-p-1">
                   <div className="img">
-                    <img className="img1" src={myChemise[1].src} alt={myChemise[1].alt} />
+                    <img
+                      className="img1"
+                      src={myChemise[1].src}
+                      alt={myChemise[1].alt}
+                    />
                   </div>
                   <div className="title-price-1">
                     <h3>{myChemise[1].name}</h3>
@@ -335,7 +357,11 @@ const HeroSection = ({ onSendData }) => {
               <div className="third-card">
                 <div className="img-t-p-1">
                   <div className="img">
-                    <img className="img1" src={myChemise[2].src} alt={myChemise[2].alt} />
+                    <img
+                      className="img1"
+                      src={myChemise[2].src}
+                      alt={myChemise[2].alt}
+                    />
                   </div>
                   <div className="title-price-1">
                     <h3>{myChemise[2].name}</h3>
@@ -376,7 +402,11 @@ const HeroSection = ({ onSendData }) => {
               <div className="last-card">
                 <div className="img-t-p-1">
                   <div className="img">
-                    <img className="img1" src={myChemise[3].src} alt={myChemise[3].alt} />
+                    <img
+                      className="img1"
+                      src={myChemise[3].src}
+                      alt={myChemise[3].alt}
+                    />
                   </div>
                   <div className="title-price-1">
                     <h3>{myChemise[3].name}</h3>
@@ -416,38 +446,37 @@ const HeroSection = ({ onSendData }) => {
 
   const Shoes = () => {
     const myShoes = [
+      {
+        id: 9,
+        name: "Shoes Jordan",
+        price: 359,
+        src: img7,
+        alt: "img1",
+      },
 
-        {
-           id : 9,
-           name : 'Shoes Jordan',
-           price : 359,
-           src : img7,
-           alt: 'img1'
-         },
-       
-        {
-           id : 10,
-           name : 'Shoes Nike',
-           price : 399,
-           src : img8,
-           alt: 'img2'
-         },
-   
-        {
-           id : 11,
-           name : 'Shoes Adidas',
-           price : 359,
-           src : img9,
-           alt: 'img3'
-         },
-         {
-           id : 12,
-           name : 'Shoes Puma',
-           price : 399,
-           src : img10,
-           alt: 'img4'
-         }
-    ]
+      {
+        id: 10,
+        name: "Shoes Nike",
+        price: 399,
+        src: img8,
+        alt: "img2",
+      },
+
+      {
+        id: 11,
+        name: "Shoes Adidas",
+        price: 359,
+        src: img9,
+        alt: "img3",
+      },
+      {
+        id: 12,
+        name: "Shoes Puma",
+        price: 399,
+        src: img10,
+        alt: "img4",
+      },
+    ];
     return (
       <>
         <h2 id="titul">Liste des Pantalons</h2>
@@ -457,7 +486,11 @@ const HeroSection = ({ onSendData }) => {
               <div className="first-card">
                 <div className="img-t-p-1">
                   <div className="img">
-                    <img className="img1" src={myShoes[0].src} alt={myShoes[0].alt} />
+                    <img
+                      className="img1"
+                      src={myShoes[0].src}
+                      alt={myShoes[0].alt}
+                    />
                   </div>
                   <div className="title-price-1">
                     <h3>{myShoes[0].name}</h3>
@@ -521,7 +554,11 @@ const HeroSection = ({ onSendData }) => {
               <div className="second-card">
                 <div className="img-t-p-1">
                   <div className="img">
-                    <img className="img1" src={myShoes[1].src} alt={myShoes[1].alt} />
+                    <img
+                      className="img1"
+                      src={myShoes[1].src}
+                      alt={myShoes[1].alt}
+                    />
                   </div>
                   <div className="title-price-1">
                     <h3>{myShoes[1].name}</h3>
@@ -534,7 +571,11 @@ const HeroSection = ({ onSendData }) => {
               <div className="third-card">
                 <div className="img-t-p-1">
                   <div className="img">
-                    <img className="img1" src={myShoes[2].src} alt={myShoes[2].alt} />
+                    <img
+                      className="img1"
+                      src={myShoes[2].src}
+                      alt={myShoes[2].alt}
+                    />
                   </div>
                   <div className="title-price-1">
                     <h3>{myShoes[2].name}</h3>
@@ -575,7 +616,11 @@ const HeroSection = ({ onSendData }) => {
               <div className="last-card">
                 <div className="img-t-p-1">
                   <div className="img">
-                    <img className="img1" src={myShoes[3].src} alt={myShoes[3].alt} />
+                    <img
+                      className="img1"
+                      src={myShoes[3].src}
+                      alt={myShoes[3].alt}
+                    />
                   </div>
                   <div className="title-price-1">
                     <h3>{myShoes[3].name}</h3>
@@ -615,38 +660,37 @@ const HeroSection = ({ onSendData }) => {
 
   const Polo = () => {
     const myPolo = [
+      {
+        id: 13,
+        name: "Red Polo",
+        price: 359,
+        src: img11,
+        alt: "img1",
+      },
 
-        {
-           id : 13,
-           name : 'Red Polo',
-           price : 359,
-           src : img11,
-           alt: 'img1'
-         },
-       
-        {
-           id : 14,
-           name : 'Black Polo',
-           price : 399,
-           src : img12,
-           alt: 'img2'
-         },
-   
-        {
-           id : 15,
-           name : 'Red Polo',
-           price : 359,
-           src : img11,
-           alt: 'img3'
-         },
-         {
-           id : 16,
-           name : 'Black Polo',
-           price : 399,
-           src : img12,
-           alt: 'img4'
-         }
-    ]
+      {
+        id: 14,
+        name: "Black Polo",
+        price: 399,
+        src: img12,
+        alt: "img2",
+      },
+
+      {
+        id: 15,
+        name: "Red Polo",
+        price: 359,
+        src: img11,
+        alt: "img3",
+      },
+      {
+        id: 16,
+        name: "Black Polo",
+        price: 399,
+        src: img12,
+        alt: "img4",
+      },
+    ];
     return (
       <>
         <h2 id="titul">Liste des Pantalons</h2>
@@ -656,7 +700,11 @@ const HeroSection = ({ onSendData }) => {
               <div className="first-card">
                 <div className="img-t-p-1">
                   <div className="img">
-                    <img className="img1" src={myPolo[0].src} alt={myPolo[0].alt} />
+                    <img
+                      className="img1"
+                      src={myPolo[0].src}
+                      alt={myPolo[0].alt}
+                    />
                   </div>
                   <div className="title-price-1">
                     <h3>{myPolo[0].name}</h3>
@@ -720,7 +768,11 @@ const HeroSection = ({ onSendData }) => {
               <div className="second-card">
                 <div className="img-t-p-1">
                   <div className="img">
-                    <img className="img1" src={myPolo[1].src} alt={myPolo[1].alt} />
+                    <img
+                      className="img1"
+                      src={myPolo[1].src}
+                      alt={myPolo[1].alt}
+                    />
                   </div>
                   <div className="title-price-1">
                     <h3>{myPolo[1].name}</h3>
@@ -733,7 +785,11 @@ const HeroSection = ({ onSendData }) => {
               <div className="third-card">
                 <div className="img-t-p-1">
                   <div className="img">
-                    <img className="img1" src={myPolo[2].src} alt={myPolo[2].alt} />
+                    <img
+                      className="img1"
+                      src={myPolo[2].src}
+                      alt={myPolo[2].alt}
+                    />
                   </div>
                   <div className="title-price-1">
                     <h3>{myPolo[2].name}</h3>
@@ -774,7 +830,11 @@ const HeroSection = ({ onSendData }) => {
               <div className="last-card">
                 <div className="img-t-p-1">
                   <div className="img">
-                    <img className="img1" src={myPolo[3].src} alt={myPolo[3].alt} />
+                    <img
+                      className="img1"
+                      src={myPolo[3].src}
+                      alt={myPolo[3].alt}
+                    />
                   </div>
                   <div className="title-price-1">
                     <h3>{myPolo[3].name}</h3>
@@ -814,38 +874,37 @@ const HeroSection = ({ onSendData }) => {
 
   const Parfum = () => {
     const myParfum = [
+      {
+        id: 17,
+        name: "Essentiel Parfum",
+        price: 359,
+        src: img13,
+        alt: "img1",
+      },
 
-        {
-           id : 17,
-           name : 'Essentiel Parfum',
-           price : 359,
-           src : img13,
-           alt: 'img1'
-         },
-       
-        {
-           id : 18,
-           name : 'Dusita Parfum',
-           price : 399,
-           src : img14,
-           alt: 'img2'
-         },
-   
-        {
-           id : 19,
-           name : 'Essentiel Parfum',
-           price : 359,
-           src : img13,
-           alt: 'img3'
-         },
-         {
-           id : 20,
-           name : 'Dusita Parfum',
-           price : 399,
-           src : img14,
-           alt: 'img4'
-         }
-    ]
+      {
+        id: 18,
+        name: "Dusita Parfum",
+        price: 399,
+        src: img14,
+        alt: "img2",
+      },
+
+      {
+        id: 19,
+        name: "Essentiel Parfum",
+        price: 359,
+        src: img13,
+        alt: "img3",
+      },
+      {
+        id: 20,
+        name: "Dusita Parfum",
+        price: 399,
+        src: img14,
+        alt: "img4",
+      },
+    ];
     return (
       <>
         <h2 id="titul">Liste des Pantalons</h2>
@@ -855,7 +914,11 @@ const HeroSection = ({ onSendData }) => {
               <div className="first-card">
                 <div className="img-t-p-1">
                   <div className="img">
-                    <img className="img1" src={myParfum[0].src} alt={myParfum[0].alt} />
+                    <img
+                      className="img1"
+                      src={myParfum[0].src}
+                      alt={myParfum[0].alt}
+                    />
                   </div>
                   <div className="title-price-1">
                     <h3>{myParfum[0].name}</h3>
@@ -919,7 +982,11 @@ const HeroSection = ({ onSendData }) => {
               <div className="second-card">
                 <div className="img-t-p-1">
                   <div className="img">
-                    <img className="img1" src={myParfum[1].src} alt={myParfum[1].alt} />
+                    <img
+                      className="img1"
+                      src={myParfum[1].src}
+                      alt={myParfum[1].alt}
+                    />
                   </div>
                   <div className="title-price-1">
                     <h3>{myParfum[1].name}</h3>
@@ -932,7 +999,11 @@ const HeroSection = ({ onSendData }) => {
               <div className="third-card">
                 <div className="img-t-p-1">
                   <div className="img">
-                    <img className="img1" src={myParfum[2].src} alt={myParfum[2].alt} />
+                    <img
+                      className="img1"
+                      src={myParfum[2].src}
+                      alt={myParfum[2].alt}
+                    />
                   </div>
                   <div className="title-price-1">
                     <h3>{myParfum[2].name}</h3>
@@ -973,7 +1044,11 @@ const HeroSection = ({ onSendData }) => {
               <div className="last-card">
                 <div className="img-t-p-1">
                   <div className="img">
-                    <img className="img1" src={myParfum[3].src} alt={myParfum[3].alt} />
+                    <img
+                      className="img1"
+                      src={myParfum[3].src}
+                      alt={myParfum[3].alt}
+                    />
                   </div>
                   <div className="title-price-1">
                     <h3>{myParfum[3].name}</h3>
@@ -1012,48 +1087,42 @@ const HeroSection = ({ onSendData }) => {
   };
 
   const animationn = () => {
-    return(
-    
+    return (
       <div className="animation2">
         <div className="first2"></div>
         <div className="second2"></div>
         <div className="third2"></div>
         <div className="last2"></div>
       </div>
-    )
-  }
-
-  
+    );
+  };
 
   const handlePurchase = (id) => {
     onSendData(id);
   };
   const [res, setres] = useState(animationn);
-  const [idd,setidd] = useState();
+  const [idd, setidd] = useState();
 
   const handleActif = (id) => {
-    
-    setTimeout(()=>{
-      setres(animationn)
-    },1000)
     setTimeout(() => {
-      
+      setres(animationn);
+    }, 1000);
+    setTimeout(() => {
       setidd(id);
-      if (idd === 3 || idd===1) {
+      if (idd === 3 || idd === 1) {
         setres(Pantalons);
-      }else if(id === 2){
-          setres(Chemises);
-      }else if(id === 4){
+      } else if (id === 2) {
+        setres(Chemises);
+      } else if (id === 4) {
         setres(Shoes);
-      }else if(id === 5){
+      } else if (id === 5) {
         setres(Polo);
-      }else if(id === 6){
+      } else if (id === 6) {
         setres(Parfum);
-      }else{
+      } else {
         setres(animationn);
       }
     }, 3000);
-    
   };
   return (
     <div className="hero-container">

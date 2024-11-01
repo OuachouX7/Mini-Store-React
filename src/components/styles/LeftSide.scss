@@ -1,132 +1,125 @@
+$brown: #965e47;
+$white: #ffffff;
+$black: #000000;
 
-    $brown : #965E47;
-    $white : #FFFFFF;
-    $black : #000000;
-
-.container-all{
-    position: relative;
+.container-all {
+  position: relative;
 }
-.works{
-
-    width: 10%;
-    height: 100vh;
+.works {
+  width: 10%;
+  height: 100vh;
 }
-.Container{
-                /* Left Sidebar */
-    height: 100%;
-    display: none;
-    z-index: -3;
-
+.Container {
+  height: 100%;
+  display: none;
+  z-index: -3;
 }
-ul{
-    padding: 0;
+ul {
+  padding: 0;
 }
-a{
-    text-decoration: none;
-    color: ($black);
+a {
+  text-decoration: none;
+  color: ($black);
 }
-.icon > p{
-    margin: 0;
+.icon > p {
+  margin: 0;
 }
-.menu{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 90%;
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 90%;
 }
-.Logo-container{
-    height: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Logo-container {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.Logo{
-    width: 46px;
-    height: 45px;
-    background: #965E47;
-    border-radius: 56px;
+.Logo {
+  width: 46px;
+  height: 45px;
+  background: #965e47;
+  border-radius: 56px;
 }
-.menu-up{
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+.menu-up {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
-.menu-down{
-    height: 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.menu-down {
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.icon{
-    display: flex;
-    cursor: pointer !important;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    min-width: 60px;
-    width: 65px;
-    background-color: transparent;
-    border: none;
+.icon {
+  display: flex;
+  cursor: pointer !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  min-width: 60px;
+  width: 65px;
+  background-color: transparent;
+  border: none;
 }
-.active{
-    padding: 6px 19px;
-    gap: 4px;
-    background: var($brown);
-    border-radius: 16px;
+.active {
+  padding: 6px 19px;
+  gap: 4px;
+  background: var($brown);
+  border-radius: 16px;
 }
-.active > a{
-    color: var($white);
+.active > a {
+  color: var($white);
 }
-.icon > svg{
-    width: 24px;
-    height: 24px;
+.icon > svg {
+  width: 24px;
+  height: 24px;
 }
-.arrow{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 50%;
-    left: 85%;
-    border: 1px solid var($black);
-    border-radius: 50%;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  border: 1px solid var($black);
+  border-radius: 50%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.working{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    animation-name: expand;
-    animation-duration: 3s;
-    
+.working {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  animation-name: expand;
+  animation-duration: 3s;
 }
-.move-arr{
-    transform: rotate(180deg);
+.move-arr {
+  transform: rotate(180deg);
 }
-.arrow > span{
-    font-size: 25px;
+.arrow > span {
+  font-size: 25px;
 }
-
-
 
 @keyframes expand {
-    0%{
-        width: calc(100%/2);
-    }
-    50%{
-        width: calc(100%/1.5);
-    }
-    100%{
-        width: calc(100%/1);
-    }
+  0% {
+    width: calc(100% / 2);
+  }
+  50% {
+    width: calc(100% / 1.5);
+  }
+  100% {
+    width: calc(100% / 1);
+  }
 }

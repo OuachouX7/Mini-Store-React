@@ -1,10 +1,8 @@
-
-  $brown: #965e47;
-  $white: #ffffff;
-  $semiWhite: #f8f8f8;
-  $black: #000000;
-  $shadow: rgba(0, 0, 0, 0.02);
-
+$brown: #965e47;
+$white: #ffffff;
+$semiWhite: #f8f8f8;
+$black: #000000;
+$shadow: rgba(0, 0, 0, 0.02);
 
 .hero-container {
   background-color: $semiWhite;
@@ -77,7 +75,6 @@ h1 {
   border-radius: 20px;
 }
 .img1 {
-
   width: 110px;
   height: 100px;
   border-radius: 16px;
@@ -241,91 +238,90 @@ h1 {
   align-items: center;
 }
 
-.animation2{
-    width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.animation2 {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.animation2 > div{
+.animation2 > div {
   width: 2%;
   height: 20%;
   background-color: #001d3d;
-  margin: 0 5px ;
+  margin: 0 5px;
   border-radius: 10px;
 }
-.first2{
+.first2 {
   animation: transform21;
   animation-iteration-count: infinite;
   animation-duration: 2s;
 }
 @keyframes transform21 {
-  0%{
-      height: 1%;
+  0% {
+    height: 1%;
   }
-  50%{
-      height: 20%;
+  50% {
+    height: 20%;
   }
-  100%{
-      height: 1%;
+  100% {
+    height: 1%;
   }
 }
-.second2{
+.second2 {
   animation: transform22;
   animation-iteration-count: infinite;
   animation-duration: 2s;
 }
 @keyframes transform22 {
-  0%{
-      height: 1%;
+  0% {
+    height: 1%;
   }
-  10%{
-      height: 1%;
+  10% {
+    height: 1%;
   }
-  60%{
-      height: 20%;
+  60% {
+    height: 20%;
   }
-  100%{
-      height: 1%;
+  100% {
+    height: 1%;
   }
 }
-.third2{
+.third2 {
   animation: transform31;
   animation-iteration-count: infinite;
   animation-duration: 2s;
 }
 @keyframes transform31 {
-  0%{
-      height: 1%;
+  0% {
+    height: 1%;
   }
-  20%{
-      height: 1%;
+  20% {
+    height: 1%;
   }
-  70%{
-      height: 20%;
+  70% {
+    height: 20%;
   }
-  100%{
-      height: 1%;
+  100% {
+    height: 1%;
   }
 }
-.last2{
+.last2 {
   animation: transform41;
   animation-iteration-count: infinite;
   animation-duration: 2s;
 }
 @keyframes transform41 {
-  0%{
-      height: 1%;
+  0% {
+    height: 1%;
   }
-  30%{
-      height: 1%;
+  30% {
+    height: 1%;
   }
-  80%{
-      height: 20%;
+  80% {
+    height: 20%;
   }
-  100%{
-      height: 1%;
+  100% {
+    height: 1%;
   }
 }
