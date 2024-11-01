@@ -99,12 +99,16 @@ function App() {
   });
 
   const respnose = res[0];
+  var res2 = null;
+  if (!respnose){
+    res2 = Products[0];
+  }
 
   return (
     <div className="the-app">
       <LeftSide />
       <HeroSection onSendData={handleData} />
-      {respnose && <Panier item={respnose} />}
+      {respnose ? <Panier item={respnose} /> : <Panier item={res2} />}
     </div>
   );
 }
