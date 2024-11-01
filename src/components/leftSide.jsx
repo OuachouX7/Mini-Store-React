@@ -8,7 +8,7 @@ const LeftSide = () => {
 
   const [isClickedMenu, setisClickedMenu] = useState(false);
 
-  const handleMenu = (event) => {
+  const handleMenu = () => {
     setisClickedMenu((prev) => !prev);
   };
 
