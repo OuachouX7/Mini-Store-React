@@ -9,16 +9,25 @@ const LeftSide = () => {
 
     const [isClicked,setisClicked] = useState(false);
 
+    const [isClickedMenu,setisClickedMenu] = useState(false);
+
     const handleMenu = (event) => {
-        const Container = document.getElementById('cont');
-        const containerAll = document.getElementById('cont-all');
 
         setbtnarr(event.target);
 
-        Container.classList.toggle('working');
-        containerAll.classList.toggle('works');
-        btnarr.classList.toggle('move-arr');
+        setisClickedMenu((prev) => !prev);
 
+    }
+
+    var containerClass = 'Container';
+    var containerAllClass = 'container-all';
+    var btnarrClass = 'arrow';
+
+
+    if (isClickedMenu) {
+        containerClass = 'Container working';
+        containerAllClass = 'container-all works';
+        btnarrClass = 'arrow move-arr';
     }
 
     const handleActifIcon = () => {
@@ -34,9 +43,9 @@ const LeftSide = () => {
     }
 
     return(
-        <div className="container-all" id='cont-all'>
+        <div className={containerAllClass} id='cont-all'>
 
-            <div className='Container' id='cont'>
+            <div className={containerClass} id='cont'>
                 <div className='Logo-container'>
                     <div className="Logo"></div>
                 </div>
@@ -81,7 +90,7 @@ const LeftSide = () => {
 
                 </div>
             </div>
-            <button className="arrow" onClick={handleMenu}>
+            <button className={btnarrClass} onClick={handleMenu}>
                 <span>&lt;</span>
             </button>
         </div>
